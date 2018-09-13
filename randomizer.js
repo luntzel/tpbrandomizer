@@ -4,12 +4,6 @@ function getRandomArbitrary(min, max) {
   return Math.floor(Math.random() * (max - min) + min) + 1 ;
 }
 
-document.write=function(s){
-  var scripts = document.getElementsByTagName('script');
-  var lastScript = scripts[scripts.length-1];
-  lastScript.insertAdjacentHTML("beforebegin", s);
-}
-
 // calculate season
 var1 = getRandomArbitrary(1,12);
 document.getElementById("season").innerHTML = var1;
