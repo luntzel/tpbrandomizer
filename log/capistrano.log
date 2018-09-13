@@ -1,0 +1,283 @@
+# Logfile created on 2018-09-12 18:19:16 -0700 by logger.rb/41954
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-12 18:19:16 -0700 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [8bbe502a] Running /usr/bin/env mkdir -p /tmp as mluntzel@kopitar.atomicdoom.com
+ DEBUG [8bbe502a] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8bbe502a] Finished in 0.491 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh 0.0%
+  INFO Uploading /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh 100.0%
+  INFO [0d888ca8] Running /usr/bin/env chmod 700 /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh as mluntzel@kopitar.atomicdoom.com
+ DEBUG [0d888ca8] Command: /usr/bin/env chmod 700 /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh
+  INFO [0d888ca8] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [f4b5c0b0] Running /usr/bin/env git ls-remote git@github.com:luntzel/tpbrandomizer.git HEAD as mluntzel@kopitar.atomicdoom.com
+ DEBUG [f4b5c0b0] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git ls-remote git@github.com:luntzel/tpbrandomizer.git HEAD )
+ DEBUG [f4b5c0b0] 	Warning: Permanently added the RSA host key for IP address '192.30.255.113' to the list of known hosts.
+ DEBUG [f4b5c0b0] 	c80f7df23a3bc0368f3183f2442afc3719fd414c	HEAD
+  INFO [f4b5c0b0] Finished in 0.661 seconds with exit status 0 (successful).
+  INFO [910d209e] Running /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/shared /srv/www/kittylandlovecenter/randomizer/releases as mluntzel@kopitar.atomicdoom.com
+ DEBUG [910d209e] Command: /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/shared /srv/www/kittylandlovecenter/randomizer/releases
+  INFO [910d209e] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-12 18:19:22 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4bfd32d3] Running /usr/bin/env mkdir -p /tmp as mluntzel@kopitar.atomicdoom.com
+ DEBUG [4bfd32d3] Command: /usr/bin/env mkdir -p /tmp
+  INFO [4bfd32d3] Finished in 0.516 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh 0.0%
+  INFO Uploading /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh 100.0%
+  INFO [df96224f] Running /usr/bin/env chmod 700 /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh as mluntzel@kopitar.atomicdoom.com
+ DEBUG [df96224f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh
+  INFO [df96224f] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [559f9d4a] Running /usr/bin/env git ls-remote git@github.com:luntzel/tpbrandomizer.git HEAD as mluntzel@kopitar.atomicdoom.com
+ DEBUG [559f9d4a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git ls-remote git@github.com:luntzel/tpbrandomizer.git HEAD )
+ DEBUG [559f9d4a] 	Warning: Permanently added the RSA host key for IP address '192.30.255.112' to the list of known hosts.
+ DEBUG [559f9d4a] 	c80f7df23a3bc0368f3183f2442afc3719fd414c	HEAD
+  INFO [559f9d4a] Finished in 0.602 seconds with exit status 0 (successful).
+  INFO [8b01498b] Running /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/shared /srv/www/kittylandlovecenter/randomizer/releases as mluntzel@kopitar.atomicdoom.com
+ DEBUG [8b01498b] Command: /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/shared /srv/www/kittylandlovecenter/randomizer/releases
+  INFO [8b01498b] Finished in 0.059 seconds with exit status 0 (successful).
+ DEBUG [5c2a9dfd] Running [ -f /srv/www/kittylandlovecenter/randomizer/current/REVISION ] as mluntzel@kopitar.atomicdoom.com
+ DEBUG [5c2a9dfd] Command: [ -f /srv/www/kittylandlovecenter/randomizer/current/REVISION ]
+ DEBUG [5c2a9dfd] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [6f61a003] Running [ -f /srv/www/kittylandlovecenter/randomizer/repo/HEAD ] as mluntzel@kopitar.atomicdoom.com
+ DEBUG [6f61a003] Command: [ -f /srv/www/kittylandlovecenter/randomizer/repo/HEAD ]
+ DEBUG [6f61a003] Finished in 0.095 seconds with exit status 1 (failed).
+ DEBUG [e8c6de74] Running if test ! -d /srv/www/kittylandlovecenter/randomizer; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [e8c6de74] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer'" 1>&2; false; fi
+ DEBUG [e8c6de74] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [6b3dda6b] Running /usr/bin/env git clone --mirror git@github.com:luntzel/tpbrandomizer.git /srv/www/kittylandlovecenter/randomizer/repo as mluntzel@kopitar.atomicdoom.com
+ DEBUG [6b3dda6b] Command: cd /srv/www/kittylandlovecenter/randomizer && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git clone --mirror git@github.com:luntzel/tpbrandomizer.git /srv/www/kittylandlovecenter/randomizer/repo )
+ DEBUG [6b3dda6b] 	Cloning into bare repository '/srv/www/kittylandlovecenter/randomizer/repo'...
+  INFO [6b3dda6b] Finished in 0.712 seconds with exit status 0 (successful).
+ DEBUG [b31e978c] Running if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [b31e978c] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi
+ DEBUG [b31e978c] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [795121e3] Running /usr/bin/env git remote set-url origin git@github.com:luntzel/tpbrandomizer.git as mluntzel@kopitar.atomicdoom.com
+ DEBUG [795121e3] Command: cd /srv/www/kittylandlovecenter/randomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git remote set-url origin git@github.com:luntzel/tpbrandomizer.git )
+  INFO [795121e3] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [3e69f853] Running /usr/bin/env git remote update --prune as mluntzel@kopitar.atomicdoom.com
+ DEBUG [3e69f853] Command: cd /srv/www/kittylandlovecenter/randomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [3e69f853] 	Fetching origin
+  INFO [3e69f853] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [9d687786] Running if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [9d687786] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi
+ DEBUG [9d687786] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [cfabb730] Running /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/releases/20180913011923 as mluntzel@kopitar.atomicdoom.com
+ DEBUG [cfabb730] Command: cd /srv/www/kittylandlovecenter/randomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/releases/20180913011923 )
+  INFO [cfabb730] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [31029436] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/www/kittylandlovecenter/randomizer/releases/20180913011923 as mluntzel@kopitar.atomicdoom.com
+ DEBUG [31029436] Command: cd /srv/www/kittylandlovecenter/randomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/www/kittylandlovecenter/randomizer/releases/20180913011923 )
+  INFO [31029436] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [b69206f8] Running if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [b69206f8] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi
+ DEBUG [b69206f8] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [5404a702] Running /usr/bin/env git rev-list --max-count=1 master as mluntzel@kopitar.atomicdoom.com
+ DEBUG [5404a702] Command: cd /srv/www/kittylandlovecenter/randomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [5404a702] 	c80f7df23a3bc0368f3183f2442afc3719fd414c
+ DEBUG [5404a702] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [f0a09d7b] Running if test ! -d /srv/www/kittylandlovecenter/randomizer/releases/20180913011923; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/releases/20180913011923'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [f0a09d7b] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer/releases/20180913011923; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/releases/20180913011923'" 1>&2; false; fi
+ DEBUG [f0a09d7b] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [3aef71a6] Running /usr/bin/env echo "c80f7df23a3bc0368f3183f2442afc3719fd414c" >> REVISION as mluntzel@kopitar.atomicdoom.com
+ DEBUG [3aef71a6] Command: cd /srv/www/kittylandlovecenter/randomizer/releases/20180913011923 && /usr/bin/env echo "c80f7df23a3bc0368f3183f2442afc3719fd414c" >> REVISION
+  INFO [3aef71a6] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [7b23b8c0] Running /usr/bin/env ln -s /srv/www/kittylandlovecenter/randomizer/releases/20180913011923 /srv/www/kittylandlovecenter/randomizer/releases/current as mluntzel@kopitar.atomicdoom.com
+ DEBUG [7b23b8c0] Command: /usr/bin/env ln -s /srv/www/kittylandlovecenter/randomizer/releases/20180913011923 /srv/www/kittylandlovecenter/randomizer/releases/current
+  INFO [7b23b8c0] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [9ef73c50] Running /usr/bin/env mv /srv/www/kittylandlovecenter/randomizer/releases/current /srv/www/kittylandlovecenter/randomizer as mluntzel@kopitar.atomicdoom.com
+ DEBUG [9ef73c50] Command: /usr/bin/env mv /srv/www/kittylandlovecenter/randomizer/releases/current /srv/www/kittylandlovecenter/randomizer
+  INFO [9ef73c50] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [6c7d4069] Running /usr/bin/env ls -x /srv/www/kittylandlovecenter/randomizer/releases as mluntzel@kopitar.atomicdoom.com
+ DEBUG [6c7d4069] Command: /usr/bin/env ls -x /srv/www/kittylandlovecenter/randomizer/releases
+ DEBUG [6c7d4069] 	20180913011923
+ DEBUG [6c7d4069] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [2a83be9c] Running if test ! -d /srv/www/kittylandlovecenter/randomizer/releases; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/releases'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [2a83be9c] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer/releases; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/releases'" 1>&2; false; fi
+ DEBUG [2a83be9c] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [406ba234] Running /usr/bin/env echo "Branch master (at c80f7df23a3bc0368f3183f2442afc3719fd414c) deployed as release 20180913011923 by markluntzel" >> /srv/www/kittylandlovecenter/randomizer/revisions.log as mluntzel@kopitar.atomicdoom.com
+ DEBUG [406ba234] Command: cd /srv/www/kittylandlovecenter/randomizer/releases && /usr/bin/env echo "Branch master (at c80f7df23a3bc0368f3183f2442afc3719fd414c) deployed as release 20180913011923 by markluntzel" >> /srv/www/kittylandlovecenter/randomizer/revisions.log
+  INFO [406ba234] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-12 18:22:53 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5c1e62e5] Running /usr/bin/env mkdir -p /tmp as mluntzel@kopitar.atomicdoom.com
+ DEBUG [5c1e62e5] Command: /usr/bin/env mkdir -p /tmp
+  INFO [5c1e62e5] Finished in 0.487 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh 0.0%
+  INFO Uploading /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh 100.0%
+  INFO [40f6daa4] Running /usr/bin/env chmod 700 /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh as mluntzel@kopitar.atomicdoom.com
+ DEBUG [40f6daa4] Command: /usr/bin/env chmod 700 /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh
+  INFO [40f6daa4] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [02728c1e] Running /usr/bin/env git ls-remote git@github.com:luntzel/tpbrandomizer.git HEAD as mluntzel@kopitar.atomicdoom.com
+ DEBUG [02728c1e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git ls-remote git@github.com:luntzel/tpbrandomizer.git HEAD )
+ DEBUG [02728c1e] 	c80f7df23a3bc0368f3183f2442afc3719fd414c	HEAD
+  INFO [02728c1e] Finished in 0.642 seconds with exit status 0 (successful).
+  INFO [8e92df17] Running /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/shared /srv/www/kittylandlovecenter/randomizer/releases as mluntzel@kopitar.atomicdoom.com
+ DEBUG [8e92df17] Command: /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/shared /srv/www/kittylandlovecenter/randomizer/releases
+ DEBUG [8e92df17] 	mkdir: 
+ DEBUG [8e92df17] 	cannot create directory ‘/srv/www/kittylandlovecenter/randomizer’
+ DEBUG [8e92df17] 	: File exists
+ DEBUG [8e92df17] 	
+ DEBUG [8e92df17] 	mkdir: 
+ DEBUG [8e92df17] 	cannot create directory ‘/srv/www/kittylandlovecenter/randomizer’
+ DEBUG [8e92df17] 	: File exists
+ DEBUG [8e92df17] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-12 18:23:09 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [1245d24b] Running /usr/bin/env mkdir -p /tmp as mluntzel@kopitar.atomicdoom.com
+ DEBUG [1245d24b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1245d24b] Finished in 0.733 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh 0.0%
+  INFO Uploading /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh 100.0%
+  INFO [179c963d] Running /usr/bin/env chmod 700 /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh as mluntzel@kopitar.atomicdoom.com
+ DEBUG [179c963d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh
+  INFO [179c963d] Finished in 0.313 seconds with exit status 0 (successful).
+  INFO [67844d93] Running /usr/bin/env git ls-remote git@github.com:luntzel/tpbrandomizer.git HEAD as mluntzel@kopitar.atomicdoom.com
+ DEBUG [67844d93] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git ls-remote git@github.com:luntzel/tpbrandomizer.git HEAD )
+ DEBUG [67844d93] 	c80f7df23a3bc0368f3183f2442afc3719fd414c	HEAD
+  INFO [67844d93] Finished in 1.025 seconds with exit status 0 (successful).
+  INFO [b67916e6] Running /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/shared /srv/www/kittylandlovecenter/randomizer/releases as mluntzel@kopitar.atomicdoom.com
+ DEBUG [b67916e6] Command: /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/shared /srv/www/kittylandlovecenter/randomizer/releases
+  INFO [b67916e6] Finished in 0.253 seconds with exit status 0 (successful).
+ DEBUG [c8d732b8] Running [ -f /srv/www/kittylandlovecenter/randomizer/current/REVISION ] as mluntzel@kopitar.atomicdoom.com
+ DEBUG [c8d732b8] Command: [ -f /srv/www/kittylandlovecenter/randomizer/current/REVISION ]
+ DEBUG [c8d732b8] Finished in 0.157 seconds with exit status 1 (failed).
+ DEBUG [77aaba7c] Running [ -f /srv/www/kittylandlovecenter/randomizer/repo/HEAD ] as mluntzel@kopitar.atomicdoom.com
+ DEBUG [77aaba7c] Command: [ -f /srv/www/kittylandlovecenter/randomizer/repo/HEAD ]
+ DEBUG [77aaba7c] Finished in 0.344 seconds with exit status 1 (failed).
+ DEBUG [23083052] Running if test ! -d /srv/www/kittylandlovecenter/randomizer; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [23083052] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer'" 1>&2; false; fi
+ DEBUG [23083052] Finished in 0.269 seconds with exit status 0 (successful).
+  INFO [1fde83e7] Running /usr/bin/env git clone --mirror git@github.com:luntzel/tpbrandomizer.git /srv/www/kittylandlovecenter/randomizer/repo as mluntzel@kopitar.atomicdoom.com
+ DEBUG [1fde83e7] Command: cd /srv/www/kittylandlovecenter/randomizer && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git clone --mirror git@github.com:luntzel/tpbrandomizer.git /srv/www/kittylandlovecenter/randomizer/repo )
+ DEBUG [1fde83e7] 	Cloning into bare repository '/srv/www/kittylandlovecenter/randomizer/repo'...
+  INFO [1fde83e7] Finished in 0.934 seconds with exit status 0 (successful).
+ DEBUG [bc093741] Running if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [bc093741] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi
+ DEBUG [bc093741] Finished in 0.207 seconds with exit status 0 (successful).
+  INFO [837ab4c6] Running /usr/bin/env git remote set-url origin git@github.com:luntzel/tpbrandomizer.git as mluntzel@kopitar.atomicdoom.com
+ DEBUG [837ab4c6] Command: cd /srv/www/kittylandlovecenter/randomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git remote set-url origin git@github.com:luntzel/tpbrandomizer.git )
+  INFO [837ab4c6] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO [afe88572] Running /usr/bin/env git remote update --prune as mluntzel@kopitar.atomicdoom.com
+ DEBUG [afe88572] Command: cd /srv/www/kittylandlovecenter/randomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [afe88572] 	Fetching origin
+  INFO [afe88572] Finished in 0.921 seconds with exit status 0 (successful).
+ DEBUG [324e9168] Running if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [324e9168] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi
+ DEBUG [324e9168] Finished in 0.274 seconds with exit status 0 (successful).
+  INFO [72c85c63] Running /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/releases/20180913012312 as mluntzel@kopitar.atomicdoom.com
+ DEBUG [72c85c63] Command: cd /srv/www/kittylandlovecenter/randomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/randomizer/releases/20180913012312 )
+  INFO [72c85c63] Finished in 0.306 seconds with exit status 0 (successful).
+  INFO [8f2bf916] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/www/kittylandlovecenter/randomizer/releases/20180913012312 as mluntzel@kopitar.atomicdoom.com
+ DEBUG [8f2bf916] Command: cd /srv/www/kittylandlovecenter/randomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/www/kittylandlovecenter/randomizer/releases/20180913012312 )
+  INFO [8f2bf916] Finished in 0.299 seconds with exit status 0 (successful).
+ DEBUG [5a79e819] Running if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [5a79e819] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/repo'" 1>&2; false; fi
+ DEBUG [5a79e819] Finished in 0.238 seconds with exit status 0 (successful).
+ DEBUG [497dc358] Running /usr/bin/env git rev-list --max-count=1 master as mluntzel@kopitar.atomicdoom.com
+ DEBUG [497dc358] Command: cd /srv/www/kittylandlovecenter/randomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [497dc358] 	c80f7df23a3bc0368f3183f2442afc3719fd414c
+ DEBUG [497dc358] Finished in 0.225 seconds with exit status 0 (successful).
+ DEBUG [9b2c3aa9] Running if test ! -d /srv/www/kittylandlovecenter/randomizer/releases/20180913012312; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/releases/20180913012312'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [9b2c3aa9] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer/releases/20180913012312; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/releases/20180913012312'" 1>&2; false; fi
+ DEBUG [9b2c3aa9] Finished in 0.230 seconds with exit status 0 (successful).
+  INFO [200409a4] Running /usr/bin/env echo "c80f7df23a3bc0368f3183f2442afc3719fd414c" >> REVISION as mluntzel@kopitar.atomicdoom.com
+ DEBUG [200409a4] Command: cd /srv/www/kittylandlovecenter/randomizer/releases/20180913012312 && /usr/bin/env echo "c80f7df23a3bc0368f3183f2442afc3719fd414c" >> REVISION
+  INFO [200409a4] Finished in 0.244 seconds with exit status 0 (successful).
+  INFO [3fa7cbca] Running /usr/bin/env ln -s /srv/www/kittylandlovecenter/randomizer/releases/20180913012312 /srv/www/kittylandlovecenter/randomizer/releases/current as mluntzel@kopitar.atomicdoom.com
+ DEBUG [3fa7cbca] Command: /usr/bin/env ln -s /srv/www/kittylandlovecenter/randomizer/releases/20180913012312 /srv/www/kittylandlovecenter/randomizer/releases/current
+  INFO [3fa7cbca] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [f3e8e2e6] Running /usr/bin/env mv /srv/www/kittylandlovecenter/randomizer/releases/current /srv/www/kittylandlovecenter/randomizer as mluntzel@kopitar.atomicdoom.com
+ DEBUG [f3e8e2e6] Command: /usr/bin/env mv /srv/www/kittylandlovecenter/randomizer/releases/current /srv/www/kittylandlovecenter/randomizer
+  INFO [f3e8e2e6] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [d971289e] Running /usr/bin/env ls -x /srv/www/kittylandlovecenter/randomizer/releases as mluntzel@kopitar.atomicdoom.com
+ DEBUG [d971289e] Command: /usr/bin/env ls -x /srv/www/kittylandlovecenter/randomizer/releases
+ DEBUG [d971289e] 	20180913012312
+ DEBUG [d971289e] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [00c28c01] Running if test ! -d /srv/www/kittylandlovecenter/randomizer/releases; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/releases'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [00c28c01] Command: if test ! -d /srv/www/kittylandlovecenter/randomizer/releases; then echo "Directory does not exist '/srv/www/kittylandlovecenter/randomizer/releases'" 1>&2; false; fi
+ DEBUG [00c28c01] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [85e944ff] Running /usr/bin/env echo "Branch master (at c80f7df23a3bc0368f3183f2442afc3719fd414c) deployed as release 20180913012312 by markluntzel" >> /srv/www/kittylandlovecenter/randomizer/revisions.log as mluntzel@kopitar.atomicdoom.com
+ DEBUG [85e944ff] Command: cd /srv/www/kittylandlovecenter/randomizer/releases && /usr/bin/env echo "Branch master (at c80f7df23a3bc0368f3183f2442afc3719fd414c) deployed as release 20180913012312 by markluntzel" >> /srv/www/kittylandlovecenter/randomizer/revisions.log
+  INFO [85e944ff] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-12 18:24:20 -0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [744b864a] Running /usr/bin/env mkdir -p /tmp as mluntzel@kopitar.atomicdoom.com
+ DEBUG [744b864a] Command: /usr/bin/env mkdir -p /tmp
+  INFO [744b864a] Finished in 0.687 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh 0.0%
+  INFO Uploading /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh 100.0%
+  INFO [cec2702e] Running /usr/bin/env chmod 700 /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh as mluntzel@kopitar.atomicdoom.com
+ DEBUG [cec2702e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-tpbrandomizer-production-markluntzel.sh
+  INFO [cec2702e] Finished in 0.188 seconds with exit status 0 (successful).
+  INFO [381b1517] Running /usr/bin/env git ls-remote git@github.com:luntzel/tpbrandomizer.git HEAD as mluntzel@kopitar.atomicdoom.com
+ DEBUG [381b1517] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git ls-remote git@github.com:luntzel/tpbrandomizer.git HEAD )
+ DEBUG [381b1517] 	c80f7df23a3bc0368f3183f2442afc3719fd414c	HEAD
+  INFO [381b1517] Finished in 0.689 seconds with exit status 0 (successful).
+  INFO [7311584c] Running /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/tpbrandomizer/shared /srv/www/kittylandlovecenter/tpbrandomizer/releases as mluntzel@kopitar.atomicdoom.com
+ DEBUG [7311584c] Command: /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/tpbrandomizer/shared /srv/www/kittylandlovecenter/tpbrandomizer/releases
+  INFO [7311584c] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [9926e0be] Running [ -f /srv/www/kittylandlovecenter/tpbrandomizer/current/REVISION ] as mluntzel@kopitar.atomicdoom.com
+ DEBUG [9926e0be] Command: [ -f /srv/www/kittylandlovecenter/tpbrandomizer/current/REVISION ]
+ DEBUG [9926e0be] Finished in 0.136 seconds with exit status 1 (failed).
+ DEBUG [af65c1d6] Running [ -f /srv/www/kittylandlovecenter/tpbrandomizer/repo/HEAD ] as mluntzel@kopitar.atomicdoom.com
+ DEBUG [af65c1d6] Command: [ -f /srv/www/kittylandlovecenter/tpbrandomizer/repo/HEAD ]
+ DEBUG [af65c1d6] Finished in 0.110 seconds with exit status 1 (failed).
+ DEBUG [8dfed660] Running if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [8dfed660] Command: if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer'" 1>&2; false; fi
+ DEBUG [8dfed660] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [b45f79d9] Running /usr/bin/env git clone --mirror git@github.com:luntzel/tpbrandomizer.git /srv/www/kittylandlovecenter/tpbrandomizer/repo as mluntzel@kopitar.atomicdoom.com
+ DEBUG [b45f79d9] Command: cd /srv/www/kittylandlovecenter/tpbrandomizer && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git clone --mirror git@github.com:luntzel/tpbrandomizer.git /srv/www/kittylandlovecenter/tpbrandomizer/repo )
+ DEBUG [b45f79d9] 	Cloning into bare repository '/srv/www/kittylandlovecenter/tpbrandomizer/repo'...
+  INFO [b45f79d9] Finished in 0.681 seconds with exit status 0 (successful).
+ DEBUG [aee7ec89] Running if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer/repo'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [aee7ec89] Command: if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer/repo'" 1>&2; false; fi
+ DEBUG [aee7ec89] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [dbd971e5] Running /usr/bin/env git remote set-url origin git@github.com:luntzel/tpbrandomizer.git as mluntzel@kopitar.atomicdoom.com
+ DEBUG [dbd971e5] Command: cd /srv/www/kittylandlovecenter/tpbrandomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git remote set-url origin git@github.com:luntzel/tpbrandomizer.git )
+  INFO [dbd971e5] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [b43b7bd1] Running /usr/bin/env git remote update --prune as mluntzel@kopitar.atomicdoom.com
+ DEBUG [b43b7bd1] Command: cd /srv/www/kittylandlovecenter/tpbrandomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [b43b7bd1] 	Fetching origin
+  INFO [b43b7bd1] Finished in 0.656 seconds with exit status 0 (successful).
+ DEBUG [76ca3542] Running if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer/repo'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [76ca3542] Command: if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer/repo'" 1>&2; false; fi
+ DEBUG [76ca3542] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [a93b0cf7] Running /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/tpbrandomizer/releases/20180913012422 as mluntzel@kopitar.atomicdoom.com
+ DEBUG [a93b0cf7] Command: cd /srv/www/kittylandlovecenter/tpbrandomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env mkdir -p /srv/www/kittylandlovecenter/tpbrandomizer/releases/20180913012422 )
+  INFO [a93b0cf7] Finished in 0.118 seconds with exit status 0 (successful).
+  INFO [7091e47b] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/www/kittylandlovecenter/tpbrandomizer/releases/20180913012422 as mluntzel@kopitar.atomicdoom.com
+ DEBUG [7091e47b] Command: cd /srv/www/kittylandlovecenter/tpbrandomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /srv/www/kittylandlovecenter/tpbrandomizer/releases/20180913012422 )
+  INFO [7091e47b] Finished in 0.130 seconds with exit status 0 (successful).
+ DEBUG [5ccf9204] Running if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer/repo'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [5ccf9204] Command: if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer/repo; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer/repo'" 1>&2; false; fi
+ DEBUG [5ccf9204] Finished in 0.131 seconds with exit status 0 (successful).
+ DEBUG [9696bc32] Running /usr/bin/env git rev-list --max-count=1 master as mluntzel@kopitar.atomicdoom.com
+ DEBUG [9696bc32] Command: cd /srv/www/kittylandlovecenter/tpbrandomizer/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-tpbrandomizer-production-markluntzel.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [9696bc32] 	c80f7df23a3bc0368f3183f2442afc3719fd414c
+ DEBUG [9696bc32] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [a27620fc] Running if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer/releases/20180913012422; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer/releases/20180913012422'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [a27620fc] Command: if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer/releases/20180913012422; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer/releases/20180913012422'" 1>&2; false; fi
+ DEBUG [a27620fc] Finished in 0.135 seconds with exit status 0 (successful).
+  INFO [43ba79fa] Running /usr/bin/env echo "c80f7df23a3bc0368f3183f2442afc3719fd414c" >> REVISION as mluntzel@kopitar.atomicdoom.com
+ DEBUG [43ba79fa] Command: cd /srv/www/kittylandlovecenter/tpbrandomizer/releases/20180913012422 && /usr/bin/env echo "c80f7df23a3bc0368f3183f2442afc3719fd414c" >> REVISION
+  INFO [43ba79fa] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [aca041b7] Running /usr/bin/env ln -s /srv/www/kittylandlovecenter/tpbrandomizer/releases/20180913012422 /srv/www/kittylandlovecenter/tpbrandomizer/releases/current as mluntzel@kopitar.atomicdoom.com
+ DEBUG [aca041b7] Command: /usr/bin/env ln -s /srv/www/kittylandlovecenter/tpbrandomizer/releases/20180913012422 /srv/www/kittylandlovecenter/tpbrandomizer/releases/current
+  INFO [aca041b7] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [69426244] Running /usr/bin/env mv /srv/www/kittylandlovecenter/tpbrandomizer/releases/current /srv/www/kittylandlovecenter/tpbrandomizer as mluntzel@kopitar.atomicdoom.com
+ DEBUG [69426244] Command: /usr/bin/env mv /srv/www/kittylandlovecenter/tpbrandomizer/releases/current /srv/www/kittylandlovecenter/tpbrandomizer
+  INFO [69426244] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG [57f10b05] Running /usr/bin/env ls -x /srv/www/kittylandlovecenter/tpbrandomizer/releases as mluntzel@kopitar.atomicdoom.com
+ DEBUG [57f10b05] Command: /usr/bin/env ls -x /srv/www/kittylandlovecenter/tpbrandomizer/releases
+ DEBUG [57f10b05] 	20180913012422
+ DEBUG [57f10b05] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [32e083c1] Running if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer/releases; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer/releases'" 1>&2; false; fi as mluntzel@kopitar.atomicdoom.com
+ DEBUG [32e083c1] Command: if test ! -d /srv/www/kittylandlovecenter/tpbrandomizer/releases; then echo "Directory does not exist '/srv/www/kittylandlovecenter/tpbrandomizer/releases'" 1>&2; false; fi
+ DEBUG [32e083c1] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [241cd628] Running /usr/bin/env echo "Branch master (at c80f7df23a3bc0368f3183f2442afc3719fd414c) deployed as release 20180913012422 by markluntzel" >> /srv/www/kittylandlovecenter/tpbrandomizer/revisions.log as mluntzel@kopitar.atomicdoom.com
+ DEBUG [241cd628] Command: cd /srv/www/kittylandlovecenter/tpbrandomizer/releases && /usr/bin/env echo "Branch master (at c80f7df23a3bc0368f3183f2442afc3719fd414c) deployed as release 20180913012422 by markluntzel" >> /srv/www/kittylandlovecenter/tpbrandomizer/revisions.log
+  INFO [241cd628] Finished in 0.106 seconds with exit status 0 (successful).
