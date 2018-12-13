@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.8.1"
+lock "3.11.0"
 
 set :application, "tpbrandomizer"
 set :repo_url, "git@github.com:luntzel/tpbrandomizer.git"
