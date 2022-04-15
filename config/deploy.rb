@@ -38,17 +38,21 @@ namespace :deploy do
 
   desc 'Install the project dependencies via yarn'
   task :yarn do
-    within release_path do
-      execute :yarn, 'install', '--production'
+    on roles(:web) do |host|
+      within release_path do
+        execute :yarn, 'install', '--production'
+      end
     end
   end
 
   desc 'Restart Passenger application'
   task :restart_passenger_app do
-    if test(:sudo, 'passenger-config', 'restart-app', fetch(:deploy_to))
-      info 'Passenger restarted!'
-    else
-      warn 'Passenger failed to restart!'
+    on roles(:web) do |host|
+      if test(:sudo, 'passenger-config', 'restart-app', fetch(:deploy_to))
+        info 'Passenger restarted!'
+      else
+        warn 'Passenger failed to restart!'
+      end
     end
   end
 
