@@ -1,0 +1,23 @@
+{
+  "name": "tpbrandomizer",
+  "version": "1.0.0",
+  "description": "Trailer Park Boys Episode Randomizer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luntzel/tpbrandomizer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luntzel/tpbrandomizer/issues"
+  },
+  "homepage": "https://github.com/luntzel/tpbrandomizer#readme"
+}
