@@ -31,3 +31,31 @@ set :deploy_to, "/srv/www/kittylandlovecenter/tpbrandomizer"
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+
+namespace :deploy do
+
+  desc 'Install the project dependencies via yarn'
+  task :yarn do
+    on roles(:web) do |host|
+      within release_path do
+        execute :yarn, 'install', '--production'
+      end
+    end
+  end
+
+  desc 'Restart Passenger application'
+  task :restart_passenger_app do
+    on roles(:web) do |host|
+      if test(:sudo, 'passenger-config', 'restart-app', fetch(:deploy_to))
+        info 'Passenger restarted!'
+      else
+        warn 'Passenger failed to restart!'
+      end
+    end
+  end
+
+
+  after :updated, :yarn
+  after :finished, :restart_passenger_app
+
+end
