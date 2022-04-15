@@ -37,10 +37,10 @@ set :ssh_options, { forward_agent: true, auth_methods: %w(publickey) }
 namespace :deploy do
 
   desc 'Install the project dependencies via yarn'
-  task :yarn do
+  task :npm do
     on roles(:web) do |host|
       within release_path do
-        execute :yarn, 'install', '--production'
+        execute :npm, 'install'
       end
     end
   end
@@ -57,7 +57,7 @@ namespace :deploy do
   end
 
 
-  after :updated, :yarn
+  after :updated, :npm
   after :finished, :restart_passenger_app
 
 end
