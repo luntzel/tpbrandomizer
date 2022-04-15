@@ -10,6 +10,8 @@ set :repo_url, "git@github.com:luntzel/tpbrandomizer.git"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/srv/www/kittylandlovecenter/tpbrandomizer"
 
+set :ssh_options, { forward_agent: true, auth_methods: %w(publickey) }
+
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
@@ -36,21 +38,17 @@ namespace :deploy do
 
   desc 'Install the project dependencies via yarn'
   task :yarn do
-    on roles(:web) do |host|
-      within release_path do
-        execute :yarn, 'install', '--production'
-      end
+    within release_path do
+      execute :yarn, 'install', '--production'
     end
   end
 
   desc 'Restart Passenger application'
   task :restart_passenger_app do
-    on roles(:web) do |host|
-      if test(:sudo, 'passenger-config', 'restart-app', fetch(:deploy_to))
-        info 'Passenger restarted!'
-      else
-        warn 'Passenger failed to restart!'
-      end
+    if test(:sudo, 'passenger-config', 'restart-app', fetch(:deploy_to))
+      info 'Passenger restarted!'
+    else
+      warn 'Passenger failed to restart!'
     end
   end
 
