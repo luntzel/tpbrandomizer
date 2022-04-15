@@ -1,9 +1,5 @@
-// Load Node modules
-var express = require('express');
-// Initialise Express
-var app = express();
-// Render static files
-app.use(express.static('public'));
+// tracing.js
+("use strict");
 
 const process = require("process");
 const { Metadata, credentials } = require("@grpc/grpc-js");
