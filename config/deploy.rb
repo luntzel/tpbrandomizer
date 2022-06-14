@@ -45,19 +45,6 @@ namespace :deploy do
     end
   end
 
-  desc 'Restart Passenger application'
-  task :restart_passenger_app do
-    on roles(:web) do |host|
-      if test(:sudo, 'passenger-config', 'restart-app', fetch(:deploy_to))
-        info 'Passenger restarted!'
-      else
-        warn 'Passenger failed to restart!'
-      end
-    end
-  end
-
-
   after :updated, :npm
-  after :finished, :restart_passenger_app
 
 end
