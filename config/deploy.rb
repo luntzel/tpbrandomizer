@@ -1,4 +1,4 @@
-# config valid only for current version of Capistrano
+# frozen_string_literal: true
 lock "3.16.0"
 
 set :application, "tpbrandomizer"
@@ -36,11 +36,11 @@ set :ssh_options, { forward_agent: true, auth_methods: %w(publickey) }
 
 namespace :deploy do
 
-  desc 'Install the project dependencies via yarn'
+  desc "Install the project dependencies via yarn"
   task :npm do
     on roles(:web) do |host|
       within release_path do
-        execute :npm, 'install'
+        execute :npm, "install"
       end
     end
   end
