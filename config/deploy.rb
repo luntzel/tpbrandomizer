@@ -40,7 +40,7 @@ namespace :deploy do
   task :npm do
     on roles(:web) do |host|
       within release_path do
-        execute :npm, "install"
+        execute :yarn, "install"
       end
     end
   end
