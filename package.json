@@ -6,9 +6,8 @@
   "scripts": {
     "test": "mocha",
     "precommit": "yarn run eslint public/randomizer.js",
-    "prepush": "yarn test"
+    "prepush": "yarn test",
     "start": "node server.js"
-
   },
   "dependencies": {},
   "repository": {
