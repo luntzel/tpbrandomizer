@@ -1,5 +1,5 @@
 /* eslint no-var: off */
-// var seasonSelection, numberOfEpisodes, episodeSelection
+var seasonSelection, numberOfEpisodes, episodeSelection
 
 function getRandomArbitrary (min, max) {
   return Math.floor(Math.random() * (max - min) + min) + 1
