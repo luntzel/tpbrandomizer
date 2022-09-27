@@ -23,75 +23,71 @@ document.getElementById('season').innerHTML = seasonSelection
 if (seasonSelection === 1) {
   numberOfEpisodes = 6
   episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-  document.body.style.backgroundImage="url('bg.jpg')";  //changing bg image
+  document.body.style.backgroundImage = "url('bg.jpg')"
 } else if (seasonSelection === 2) {
   numberOfEpisodes = 7
   episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-  document.body.style.backgroundImage="url('bg.jpg')";  //changing bg image
+  document.body.style.backgroundImage = "url('bg.jpg')"
 } else if (seasonSelection === 3) {
   numberOfEpisodes = 7
   episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-  document.body.style.backgroundImage="url('bg.jpg')";  //changing bg image
+  document.body.style.backgroundImage = "url('bg.jpg')"
 } else if (seasonSelection === 4) {
   numberOfEpisodes = 8
   episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-  document.body.style.backgroundImage="url('bg.jpg')";  //changing bg image
+  document.body.style.backgroundImage = "url('bg.jpg')"
 } else if (seasonSelection === 5) {
   numberOfEpisodes = 10
   episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-  document.body.style.backgroundImage="url('bg.jpg')";  //changing bg image
+  document.body.style.backgroundImage = "url('bg.jpg')"
 } else if (seasonSelection === 6) {
   numberOfEpisodes = 6
   episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-  document.body.style.backgroundImage="url('bg.jpg')";  //changing bg image
+  document.body.style.backgroundImage = "url('bg.jpg')"
 } else if (seasonSelection === 7) {
   numberOfEpisodes = 10
   var y = Math.floor(Math.random() * 100)
   if (y <= 25) {
     episodeSelection = 4
-    document.body.style.backgroundImage="url('tpb-sb.png')";  //changing bg image
-    document.body.style.backgroundRepeat="fixed";
+    document.body.style.backgroundImage = "url('tpb-sb.png')"
   } else if (y <= 50) {
     episodeSelection = 5
-    document.body.style.backgroundImage="url('tpb-sb.png')";  //changing bg image
-    document.body.style.backgroundRepeat="fixed";
+    document.body.style.backgroundImage = "url('tpb-sb.png')"
   } else if (y <= 75) {
     episodeSelection = 10
-    document.body.style.backgroundImage="url('tpb-sb.png')";  //changing bg image
-    document.body.style.backgroundRepeat="fixed";
+    document.body.style.backgroundImage = "url('tpb-sb.png')"
   } else {
     episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-    document.body.style.backgroundImage="url('bg.jpg')";
+    document.body.style.backgroundImage = "url('bg.jpg')"
   }
 } else if (seasonSelection === 8) {
   numberOfEpisodes = 10
   var z = Math.floor(Math.random() * 100)
   if (z <= 50) {
     episodeSelection = 10
-    document.body.style.backgroundImage="url('tpb-sb.png')";
+    document.body.style.backgroundImage = "url('tpb-sb.png')"
   } else {
     episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-    document.body.style.backgroundImage="url('bg.jpg')";
+    document.body.style.backgroundImage = "url('bg.jpg')"
   }
 } else if (seasonSelection === 9) {
   numberOfEpisodes = 10
   episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-  document.body.style.backgroundImage="url('bg.jpg')";
+  document.body.style.backgroundImage = "url('bg.jpg')"
 } else if (seasonSelection === 10) {
   numberOfEpisodes = 10
   episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-  document.body.style.backgroundImage="url('bg.jpg')";  //changing bg image
+  document.body.style.backgroundImage = "url('bg.jpg')"
 } else if (seasonSelection === 11) {
   numberOfEpisodes = 10
   episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-  document.body.style.backgroundImage="url('bg.jpg')";  //changing bg image
+  document.body.style.backgroundImage = "url('bg.jpg')"
 } else {
   numberOfEpisodes = 10
   episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
-  document.body.style.backgroundImage="url('bg.jpg')";  //changing bg image
+  document.body.style.backgroundImage = "url('bg.jpg')"
 }
 
 document.getElementById('episode').innerHTML = episodeSelection
-document.body.style.backgroundRepeat = "no-repeat";
-document.body.style.backgroundSize = "cover";
-document.addEventListener("DOMContentLoaded", changeBackgroundImage());
+document.body.style.backgroundRepeat = 'no-repeat'
+document.body.style.backgroundSize = 'cover'
