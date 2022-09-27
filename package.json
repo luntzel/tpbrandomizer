@@ -4,8 +4,11 @@
   "description": "Trailer Park Boys Episode Randomizer",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
+    "precommit": "yarn run eslint public/randomizer.js",
+    "prepush": "yarn test"
     "start": "node server.js"
+
   },
   "dependencies": {},
   "repository": {
@@ -23,6 +26,7 @@
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0"
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.1"
   }
 }
