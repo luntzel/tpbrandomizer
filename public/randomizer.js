@@ -38,15 +38,15 @@ if (seasonSelection === 1) {
 
 // weigh Sebastian Bach episodes higher
 if (seasonSelection === 7) {
-  var n=Math.floor(Math.random()*100)
-  switch(n){
-    case n<25:
+  var n = Math.floor( Math.random() * 100 )
+  switch(n) {
+    case n < 25:
       episodeSelection = 4;
       break;
-    case n<50:
+    case n < 50:
       episodeSelection = 5;
       break;
-    case n<75:
+    case n < 75:
       episodeSelection = 10;
       break;
     default:
@@ -55,9 +55,9 @@ if (seasonSelection === 7) {
 }
 
 if (seasonSelection === 8) {
-  var n=Math.floor(Math.random()*100)
-  switch(n){
-    case n<50:
+  var n = Math.floor( Math.random() * 100 )
+  switch(n) {
+    case n < 50:
       episodeSelection = 4;
       break;
     default:
