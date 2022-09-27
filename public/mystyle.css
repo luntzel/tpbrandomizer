@@ -1,0 +1,8 @@
+h1 {
+  text-shadow: -5px -5px 5px green,-5px 5px 5px green,
+                5px -5px 5px green,5px 5px 5px green;
+}
+h2 {
+    text-shadow: -5px -5px 5px green,-5px 5px 5px green,
+                  5px -5px 5px green,5px 5px 5px green;
+}
