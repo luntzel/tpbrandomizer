@@ -42,13 +42,13 @@ if (seasonSelection === 7) {
   switch (n) {
     case n < 25:
       episodeSelection = 4
-      break;
+      break
     case n < 50:
       episodeSelection = 5
-      break;
+      break
     case n < 75:
       episodeSelection = 10
-      break;
+      break
     default:
       episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
   }
@@ -59,7 +59,7 @@ if (seasonSelection === 8) {
   switch (x) {
     case x < 50:
       episodeSelection = 4
-      break;
+      break
     default:
       episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
   }
