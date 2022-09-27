@@ -36,5 +36,34 @@ if (seasonSelection === 1) {
   numberOfEpisodes = 10
 }
 
-episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
+// weigh Sebastian Bach episodes higher
+if (seasonSelection === 7) {
+  var n=Math.floor(Math.random()*100)
+  switch(n){
+    case n<25:
+      episodeSelection = 4;
+      break;
+    case n<50:
+      episodeSelection = 5;
+      break;
+    case n<75:
+      episodeSelection = 10;
+      break;
+    default:
+      episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
+  }
+}
+
+if (seasonSelection === 8) {
+  var n=Math.floor(Math.random()*100)
+  switch(n){
+    case n<50:
+      episodeSelection = 4;
+      break;
+    default:
+      episodeSelection = getRandomArbitrary(1, numberOfEpisodes)
+  }
+}
+
+
 document.getElementById('episode').innerHTML = episodeSelection
