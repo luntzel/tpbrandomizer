@@ -1,10 +1,17 @@
 h1 {
-  text-shadow: -5px -5px 5px green,-5px 5px 5px #49fb35,
-               5px -5px 5px green,5px 5px 5px #49fb35;
+  text-shadow:
+    -5px -5px 5px green,
+    -5px 5px 5px #49fb35,
+    5px -5px 5px green,
+    5px 5px 5px #49fb35;
   font-size: 50px;
 }
+
 h2 {
-    text-shadow: -5px -5px 5px green,-5px 5px 5px #49fb35,
-                  5px -5px 5px green,5px 5px 5px #49fb35;
-    font-size: 50px;
+  text-shadow:
+    -5px -5px 5px green,
+    -5px 5px 5px #49fb35,
+    5px -5px 5px green,
+    5px 5px 5px #49fb35;
+  font-size: 50px;
 }
