@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "helm-tpb.fullname" . }}
+  name: {{ include "tpb.fullname" . }}
   labels:
-    "{{- include "helm-tpb.labels" . | nindent 4 }}"
-    spec:"
+    {{- include "tpb.labels" . | nindent 4 }}
+spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "helm-tpb.selectorLabels" . | nindent 6 }}
+      {{- include "tpb.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,7 +18,7 @@ metadata:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "helm-tpb.labels" . | nindent 8 }}
+        {{- include "tpb.labels" . | nindent 8 }}
 	{{- with .Values.podLabels }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
@@ -27,7 +27,7 @@ metadata:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "helm-tpb.serviceAccountName" . }}
+      serviceAccountName: {{ include "tpb.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:

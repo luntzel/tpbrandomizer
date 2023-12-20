@@ -30,6 +30,8 @@
     "stylelint-config-standard": "^28.0.0"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "yaml-lint": "^1.7.0"
   }
 }
