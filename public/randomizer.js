@@ -8,14 +8,16 @@ function getRandomArbitrary (min, max) {
 
 // calculate seasonSelection
 // weight seasons 7 and 8 higher because Sebastian that greasy bastard
-var x = Math.floor(Math.random() * 100)
-if (x <= 40) {
-  seasonSelection = 7
-} else if (x <= 80) {
-  seasonSelection = 8
-} else {
-  seasonSelection = getRandomArbitrary(0, 12)
-}
+// var x = Math.floor(Math.random() * 100)
+// if (x <= 40) {
+//   seasonSelection = 7
+// } else if (x <= 80) {
+//   seasonSelection = 8
+// } else {
+//   seasonSelection = getRandomArbitrary(0, 12)
+// }
+
+seasonSelection = getRandomArbitrary(0, 12)
 
 document.getElementById('season').innerHTML = seasonSelection
 
