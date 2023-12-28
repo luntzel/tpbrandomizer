@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: tpb
+  namespace: tpb
+spec:
+  rules:
+    - host: test.orglabsolutions.com
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: tpb
+                port:
+                  number: 4000

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tpb
+  labels:
+    app: tpb   # Add this label
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tpb
+  template:
+    metadata:
+      labels:
+        app: tpb   # Add this label
+    spec:
+      containers:
+        - name: tpb
+          image: your-node-app-image:tag
+          ports:
+            - containerPort: 4000

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tpb
+  namespace: tpb
+spec:
+  ports:
+    - name: tcp
+      port: 80
+      targetPort: 4000
+  selector:
+    app: tpb
