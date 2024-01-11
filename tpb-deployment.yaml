@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: tpb
-          image: your-node-app-image:tag
+          image: luntzel/tpbrandomizer:0.0.7
           ports:
             - containerPort: 4000
