@@ -1,0 +1,21 @@
+# templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "tpbrandomizer.fullname" . }}
+  labels:
+    app: {{ include "tpbrandomizer.name" . }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ include "tpbrandomizer.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "tpbrandomizer.name" . }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}

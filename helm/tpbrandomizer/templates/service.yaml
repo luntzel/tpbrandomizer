@@ -1,0 +1,13 @@
+# templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "tpbrandomizer.fullname" . }}
+  labels:
+    app: {{ include "tpbrandomizer.name" . }}
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: {{ include "tpbrandomizer.name" . }}
