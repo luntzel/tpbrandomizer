@@ -6,5 +6,10 @@ COPY --chown=node:node package*.json ./
 USER node
 RUN npm install
 COPY --chown=node:node . .
+
+HEALTHCHECK --interval=30s --timeout=3s \
+  CMD curl -f http://localhost:4000/ || exit 1
+
 EXPOSE 4000
+
 ENTRYPOINT [ "node", "app.js" ]
