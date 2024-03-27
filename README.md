@@ -5,10 +5,13 @@ K8s port foward on localhost:
 `kubectl port-forward service/tpbrandomizer -n tpb 8081:4000`
 
 
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+
+``
 kubectl apply -f create-service-cccount.yaml
 kubectl apply -f create-cluster-role-binding.yaml
 kubectl -n kubernetes-dashboard create token admin-user
-
+``
 
 Argocd:
 
