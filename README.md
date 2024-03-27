@@ -11,4 +11,7 @@ Argocd:
 Get admin password: `kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d && echo`
 
 
-[![Lint Code Base](https://github.com/luntzel/tpbrandomizer/actions/workflows/linter.yml/badge.svg)](https://github.com/luntzel/tpbrandomizer/actions/workflows/linter.yml)
+
+[![Super-Linter](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE_NAME>/badge.svg)](https://github.com/marketplace/actions/super-linter)
+
+
