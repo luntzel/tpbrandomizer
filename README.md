@@ -20,7 +20,9 @@ Argocd:
 Get admin password: `kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d && echo`
 
 
+Build docker image: 
 
+docker-buildx build -t luntzel/tpbrandomizer:0.0.8 --push .
 
 
 
