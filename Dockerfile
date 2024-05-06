@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:21-alpine
+FROM --platform=linux/amd64 node:22-alpine
 RUN echo "net.ipv4.ping_group_range = 0 2147483647" >> /etc/sysctl.conf
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 WORKDIR /home/node/app
